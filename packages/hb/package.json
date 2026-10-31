@@ -3,5 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": { "test": "node --test --test-reporter=tap test.js" },
-  "dependencies": { "handlebars": "4.0.5" }
+  "dependencies": {
+    "handlebars": "4.7.10"
+  }
 }
