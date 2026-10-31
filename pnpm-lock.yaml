@@ -4,13 +4,16 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  minimist@>=0.0.0 <0.2.4: 0.2.4
+
 importers:
 
   .:
     dependencies:
       lodash:
-        specifier: 4.17.15
-        version: 4.17.15
+        specifier: 4.18.1
+        version: 4.18.1
 
   packages/hb:
     dependencies:
@@ -62,15 +65,15 @@ packages:
     resolution: {integrity: sha512-RE2g0b5VGZsOCFOCgP7omTRYFqydmZkBwl5oNnQ1lDYC57uyO9KqNnNVxT7COSHTxrRCWVcAVOcbjk+tvh/rgQ==}
     engines: {node: '>=0.10.0'}
 
-  lodash@4.17.15:
-    resolution: {integrity: sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==}
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
 
   longest@1.0.1:
     resolution: {integrity: sha512-k+yt5n3l48JU4k8ftnKG6V7u32wyH2NfKzeMto9F/QRE0amxy/LayxwlvjjkZEIzqR+19IrtFO8p5kB9QaYUFg==}
     engines: {node: '>=0.10.0'}
 
-  minimist@0.0.10:
-    resolution: {integrity: sha512-iotkTvxc+TwOm5Ieim8VnSNvCDjCK9S8G3scJ50ZthspSxa7jx50jkhYduuAtAjvfDUwSgOwf8+If99AlOEhyw==}
+  minimist@0.2.4:
+    resolution: {integrity: sha512-Pkrrm8NjyQ8yVt8Am9M+yUt74zE3iokhzbG1bFVNjLB92vwM71hf40RkEsryg98BujhVOncKm/C1xROxZ030LQ==}
 
   optimist@0.6.1:
     resolution: {integrity: sha512-snN4O4TkigujZphWLN0E//nQmm7790RYaE53DdL7ZYwee2D8DDo9/EyYiKUfN3rneWUjhJnueija3G9I2i0h3g==}
@@ -165,16 +168,16 @@ snapshots:
   lazy-cache@1.0.4:
     optional: true
 
-  lodash@4.17.15: {}
+  lodash@4.18.1: {}
 
   longest@1.0.1:
     optional: true
 
-  minimist@0.0.10: {}
+  minimist@0.2.4: {}
 
   optimist@0.6.1:
     dependencies:
-      minimist: 0.0.10
+      minimist: 0.2.4
       wordwrap: 0.0.3
 
   repeat-string@1.6.1:
